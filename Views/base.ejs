@@ -1,0 +1,12 @@
+<%-include('header')-%>
+<div class="login">
+    <h1>Login System</h1>
+    <form action="/login" method="POST">
+      <input type="text" placeholder="Username" name="username">
+      <input type="password" placeholder="Password" name="password">
+      <button type="submit">Login</button>
+      <p><%=locals.message ? message:""%></p>
+    </form>
+  </div>
+  
+<%-include('footer')-%>
